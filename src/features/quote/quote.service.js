@@ -40,8 +40,6 @@ class QuoteService {
     }
   }
 
-
-
   async sendQuoteNotificationToAdmin(quote) {
     try {
       const adminEmail = process.env.ADMIN_EMAIL;
@@ -140,7 +138,6 @@ class QuoteService {
       
     } catch (error) {
       this.log.error('Failed to send admin notification', error);
-      // Don't throw error - email failure shouldn't break the quote creation
     }
   }
 
@@ -195,7 +192,6 @@ class QuoteService {
       
     } catch (error) {
       this.log.error('Failed to send user confirmation', error);
-      // Don't throw error - email failure shouldn't break the quote creation
     }
   }
 }
