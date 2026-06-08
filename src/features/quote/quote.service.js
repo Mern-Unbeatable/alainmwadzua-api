@@ -182,6 +182,8 @@ class QuoteService {
         </html>
       `;
       
+
+      
       await emailService.sendEmail({
         to: quote.email,
         subject: 'Quote Request Confirmation - We\'ll Get Back to You Soon',
