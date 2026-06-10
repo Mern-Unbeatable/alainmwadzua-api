@@ -54,7 +54,7 @@ export class Server {
 
     const allowedOrigins = [
       'http://localhost:5173',
-      'https://alainmwadzua.maktechgroup.tech',
+      'https://onlineclasswriters.com',
     ];
 
     app.use(
